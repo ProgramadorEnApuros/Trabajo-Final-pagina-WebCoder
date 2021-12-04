@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <title>Pedidos</title>
+</head>
+<body>
+<!-- Css Bootstrap -->
+<script src="../js/bootstrap.js"></script>
+<!--FIN Css Bootstrap  -->
+<!-- NavBar v2.0 -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-1" >
+        <div class="container-fluid">
+            <div class="navbar-brand  d-flex align-items-center h1 fs-1 fw-bold text-decoration-underline" href="#">
+                <img src="../imagenes/Stunning.PNG" alt="" width="100%" height="80px" class="mx-3">
+                Stunning
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-lg-end " id="navbarNav">
+                <ul class="navbar-nav fs-3">
+                    <li class="nav-item mx-2">
+                        <a class="btn btn-outline-light" href="../index1.html" role="button">Inicio</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="btn btn-outline-light" href="catalogos.html">Catalogo</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="btn btn-outline-light" href="Clientes.html">Clientes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<hr class="m-0">
+
+<main class="bg-dark p-0 text-dark bg-opacity-25">
+ <!-- SEPARADOR -->
+   <div class="container bg-dark py-2 my-0 ">
+    <div class="row">
+        <div class="col text-center py-2 text-white h2 text-decoration-underline fw-bold">
+            <p>Preguntas Frecuentes</p>
+        </div>
+    </div>
+</div>
+<!-- SEPARADOR -->
+<!-- Acordion  -->
+    <div class="container">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <!-- Acordion -->
+    <!-- Formulario -->
+    <div class="container">
+        <div class="col my-3 mx-0 text-white ">
+            <h4 class="mb-3 text-white">Formulario de Pedidos</h4>
+            <form class="needs-validation" novalidate="">
+              <div class="row">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                  <div class="invalid-feedback">
+                    Valid first name is required.
+                  </div>
+                </div>
+    
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                  <div class="invalid-feedback">
+                    Valid last name is required.
+                  </div>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Default file input example</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+    
+                <div class="col-12">
+                  <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                  <div class="invalid-feedback">
+                    Please enter a valid email address for shipping updates.
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="address" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                  <div class="invalid-feedback">
+                    Please enter your shipping address.
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
+                  <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                </div>
+    
+                <div class="col-md-5">
+                  <label for="country" class="form-label">Country</label>
+                  <select class="form-select" id="country" required="">
+                    <option value="">Choose...</option>
+                    <option>United States</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid country.
+                  </div>
+                </div>
+    
+                <div class="col-md-4">
+                  <label for="state" class="form-label">State</label>
+                  <select class="form-select" id="state" required="">
+                    <option value="">Choose...</option>
+                    <option>California</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please provide a valid state.
+                  </div>
+                </div>
+    
+                <div class="col-md-3">
+                  <label for="zip" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="zip" placeholder="" required="">
+                  <div class="invalid-feedback">
+                    Zip code required.
+                  </div>
+                </div>
+              </div>
+    
+              <hr class="my-4">
+    
+              <button class="w-100 btn btn-outline-light btn-lg mb-5" type="submit">Continue to checkout</button>
+            </form>
+          </div>
+    </div>
+ 
+    <!-- Formulario -->
+</main>
+<!-- Pie de Pagina -->
+<footer>
+  <div class="container-fluid bg-dark text-white">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="index1.html" class="nav-link px-2 text-white">Inicio</a></li>
+          <li class="nav-item"><a href="pages/catalogos.html" class="nav-link px-2 text-white">Catalogo</a></li>
+          <li class="nav-item"><a href="pages/Clientes.html" class="nav-link px-2 text-white">Clientes</a></li>
+          <li class="nav-item"><a href="pages/Pedidos.html" class="nav-link px-2 text-white">Pedidos</a></li>
+        </ul>
+        <p class="text-center">© 2021 Stunning, Inc</p>
+      </footer>
+    </div>
+</footer>
+<!-- Fin Pie de Pagina -->
+</body>
+</html>
